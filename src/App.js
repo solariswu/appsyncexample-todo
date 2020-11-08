@@ -9,7 +9,7 @@ import { listTodos } from './graphql/queries'
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
-const initialState = { name: '', description: '' }
+const initialState = { name: 'test', description: '' }
 
 const App = () => {
   const [formState, setFormState] = useState(initialState)
